@@ -17,5 +17,8 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Ready_API_DEMO3
-      working-directory: 'C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin'
-      run: '.\testrunner.bat -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\ReadyAPI-Testing\Demo-readyapi-project'
+      working-directory: C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin\testrunner.bat -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\ReadyAPI-Testing\Demo-readyapi-project
+
+      
+      #'C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin'
+      #run: '.\testrunner.bat -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\ReadyAPI-Testing\Demo-readyapi-project'

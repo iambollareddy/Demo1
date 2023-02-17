@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/pet/findByTags" path="/pet/findByTags" id="9dd8325c-8a7d-49e4-93b7-adf019581ac5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9dd8325c-8a7d-49e4-93b7-adf019581ac5fileName">%2Fpet%2FfindByTags</con:setting></con:settings><con:parameters/><con:method name="findPetsByTags" id="ebdc61aa-6ee4-4f71-9e55-8ec3e1e4ac24" method="GET"><con:description>Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.&#13;
+Finds Pets by tags</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>tags</con:name><con:style>QUERY</con:style><con:dataType>array</con:dataType><con:description>Tags to filter by</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrlss>
+      <photoUrl>string</photoUrl>
+   </photoUrlss>
+   <tagss>
+      <tag>
+         <id>0</id>
+         <name>string</name>
+      </tag>
+   </tagss>
+   <status>available</status>
+</Pet>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:request name="Request 1" id="64332c04-c99c-49ab-8b9c-fd4870b68df0" mediaType="application/json"><con:settings/><con:endpoint>http://petstore.swagger.io</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource>
